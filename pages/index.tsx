@@ -10,7 +10,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Welcome to Swashbuckle Studios</h1>
+        <img
+          src={require("../public/squidgylogo.png")}
+          style={{ width: 400, maxWidth: "80%" }}
+        />
 
         <p className="description">
           Welcome to the chaos and creation of{" "}
@@ -24,7 +27,15 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
+          <a
+            href="https://buck.band"
+            className="card"
+            style={{
+              backgroundImage:
+                "url(" + `${require("../public/records.jpg")}` + ")",
+              backgroundSize: "cover",
+            }}
+          >
             <h3>Swashbuckle Records &rarr;</h3>
             <p>
               I like music like a dog loves running. I make it for my own
@@ -32,7 +43,15 @@ export default function Home() {
             </p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
+          <a
+            href="https://swashbuckle.dev"
+            className="card"
+            style={{
+              backgroundImage:
+                "url(" + `${require("../public/software.jpg")}` + ")",
+              backgroundSize: "cover",
+            }}
+          >
             <h3>Swashbuckle Software &rarr;</h3>
             <p>
               Sometimes, it's great to try out a software project the way I want
@@ -42,12 +61,19 @@ export default function Home() {
           <OverlayTrigger
             placement="top"
             overlay={
-              <Tooltip id={`tooltip-stories`}>
+              <Tooltip id={`tooltip-stories`} style={{ marginBottom: 5 }}>
                 Nope. <strong>Not yet</strong>...
               </Tooltip>
             }
           >
-            <span className="card card-disabled">
+            <span
+              className="card card-disabled"
+              style={{
+                backgroundImage:
+                  "url(" + `${require("../public/stories.jpg")}` + ")",
+                backgroundSize: "cover",
+              }}
+            >
               <h3>Swashbuckle Stories</h3>
               <p>
                 I enjoy reading and writing stories. It’d be cool to one day put
@@ -58,12 +84,19 @@ export default function Home() {
           <OverlayTrigger
             placement="top"
             overlay={
-              <Tooltip id={`tooltip-stories`}>
+              <Tooltip id={`tooltip-stories`} style={{ marginBottom: 5 }}>
                 Big sad. <strong>Someday</strong>...
               </Tooltip>
             }
           >
-            <span className="card card-disabled">
+            <span
+              className="card card-disabled"
+              style={{
+                backgroundImage:
+                  "url(" + `${require("../public/kitchen.jpg")}` + ")",
+                backgroundSize: "cover",
+              }}
+            >
               <h3>Swashbuckle Kitchen</h3>
               <p>
                 Someday, I’d like to compile a big cookbook, and maybe some kind
@@ -124,7 +157,7 @@ export default function Home() {
         }
 
         .description a {
-          color: #0070f3;
+          color: #eb4c71;
           text-decoration: none;
         }
 
@@ -174,7 +207,7 @@ export default function Home() {
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
-          color: inherit;
+          color: white;
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
@@ -184,15 +217,21 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #eb4c71;
+          border-color: #eb4c71;
+        }
+
+        footer a:hover,
+        footer a:focus,
+        footer a:active {
+          color: #eb4c71;
         }
 
         .card-disabled:hover,
         .card-disabled:focus,
         .card-disabled:active {
-          color: grey;
-          border-color: grey;
+          color: lightgrey;
+          border-color: lightgrey;
         }
 
         .card h3 {
