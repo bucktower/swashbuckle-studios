@@ -58,52 +58,35 @@ export default function Home() {
               to architect it from the ground up
             </p>
           </a>
-          <OverlayTrigger
-            placement="top"
-            overlay={
-              <Tooltip id={`tooltip-stories`} style={{ marginBottom: 5 }}>
-                Nope. <strong>Not yet</strong>...
-              </Tooltip>
-            }
+          <a
+            href="https://swashbuckle.games"
+            className="card"
+            style={{
+              backgroundImage:
+                "url(" + `${require("../public/games.jpg")}` + ")",
+              backgroundSize: "cover",
+            }}
           >
-            <span
-              className="card card-disabled"
-              style={{
-                backgroundImage:
-                  "url(" + `${require("../public/stories.jpg")}` + ")",
-                backgroundSize: "cover",
-              }}
-            >
-              <h3>Swashbuckle Stories</h3>
-              <p>
-                I enjoy reading and writing stories. It’d be cool to one day put
-                them into some poetry, books, or film.
-              </p>
-            </span>
-          </OverlayTrigger>
-          <OverlayTrigger
-            placement="top"
-            overlay={
-              <Tooltip id={`tooltip-stories`} style={{ marginBottom: 5 }}>
-                Big sad. <strong>Someday</strong>...
-              </Tooltip>
-            }
+            <h3>Swashbuckle Games &rarr;</h3>
+            <p>
+              Games are the perfect meeting place of code, music, and story. Might as well try making some.
+            </p>
+          </a>
+
+          <a
+            href="https://www.swashbucklestories.com/"
+            className="card"
+            style={{
+              backgroundImage:
+                "url(" + `${require("../public/stories.jpg")}` + ")",
+              backgroundSize: "cover",
+            }}
           >
-            <span
-              className="card card-disabled"
-              style={{
-                backgroundImage:
-                  "url(" + `${require("../public/kitchen.jpg")}` + ")",
-                backgroundSize: "cover",
-              }}
-            >
-              <h3>Swashbuckle Kitchen</h3>
-              <p>
-                Someday, I’d like to compile a big cookbook, and maybe some kind
-                of cooking Youtube channel.
-              </p>
-            </span>
-          </OverlayTrigger>
+            <h3>Swashbuckle Stories &rarr;</h3>
+            <p>
+              I enjoy reading and writing stories. It’d be cool to one day put them into some poetry, books, or film.
+            </p>
+          </a>
         </div>
       </main>
 
