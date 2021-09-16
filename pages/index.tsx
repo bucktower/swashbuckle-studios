@@ -74,7 +74,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.swashbucklestories.com/"
+            href="https://swashbucklestories.com/"
             className="card"
             style={{
               backgroundImage:
