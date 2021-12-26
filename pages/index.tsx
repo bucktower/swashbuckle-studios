@@ -36,26 +36,13 @@ export default function Home() {
               backgroundSize: "cover",
             }}
           >
-            <h3>Swashbuckle Records &rarr;</h3>
+            <h3 style={{ marginBottom: 0 }}>Swashbuckle Records &rarr;</h3>
+            <p style={{ marginBottom: 16 }}>
+              <em>buck.band</em>
+            </p>
             <p>
               I like music like a dog loves running. I make it for my own
               pleasure, but I like sharing it with friends.
-            </p>
-          </a>
-
-          <a
-            href="https://swashbuckle.dev"
-            className="card"
-            style={{
-              backgroundImage:
-                "url(" + `${require("../public/software.jpg")}` + ")",
-              backgroundSize: "cover",
-            }}
-          >
-            <h3>Swashbuckle Software &rarr;</h3>
-            <p>
-              Sometimes, it's great to try out a software project the way I want
-              to architect it from the ground up
             </p>
           </a>
           <a
@@ -67,12 +54,33 @@ export default function Home() {
               backgroundSize: "cover",
             }}
           >
-            <h3>Swashbuckle Games &rarr;</h3>
+            <h3 style={{ marginBottom: 0 }}>Swashbuckle Games &rarr;</h3>
+            <p style={{ marginBottom: 16 }}>
+              <em>buck.fun</em>
+            </p>
             <p>
-              Games are the perfect meeting place of code, music, and story. Might as well try making some.
+              Games are the perfect meeting place of code, music, and story.
+              Might as well try making some.
             </p>
           </a>
-
+          <a
+            href="https://swashbuckle.dev"
+            className="card"
+            style={{
+              backgroundImage:
+                "url(" + `${require("../public/software.jpg")}` + ")",
+              backgroundSize: "cover",
+            }}
+          >
+            <h3 style={{ marginBottom: 0 }}>Swashbuckle Software &rarr;</h3>
+            <p style={{ marginBottom: 16 }}>
+              <em>swashbuckle.dev</em>
+            </p>
+            <p>
+              Sometimes, it's great to try out a software project the way I want
+              to architect it from the ground up
+            </p>
+          </a>
           <a
             href="https://swashbucklestories.com/"
             className="card"
@@ -82,9 +90,13 @@ export default function Home() {
               backgroundSize: "cover",
             }}
           >
-            <h3>Swashbuckle Stories &rarr;</h3>
+            <h3 style={{ marginBottom: 0 }}>Swashbuckle Stories &rarr;</h3>
+            <p style={{ marginBottom: 16 }}>
+              <em>swashbucklestories.com</em>
+            </p>
             <p>
-              I enjoy reading and writing stories. It’d be cool to one day put them into some poetry, books, or film.
+              I enjoy reading and writing stories. It’d be cool to one day put
+              them into some poetry, books, or film.
             </p>
           </a>
         </div>
